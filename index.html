@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zane.dev</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo">ZC</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li id="resume"><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Hi, I'm Zane Chapman</h1>
+                    <p>I'm Zane, a computer science student at Mississippi State University with a strong interest in software development. I'm especially drawn to full stack engineering and enjoy building well-structured, maintainable applications. I’m always looking to expand my understanding of how modern software systems are designed and operated.</p>
+                    <p>So far, I’ve completed two co-op rotations at <a href="https://www.adtran.com/en" target="_blank">Adtran</a>, where I worked closely with engineers on real-world projects and gained valuable hands-on experience. Those terms helped me grow as both a developer and a teammate, and I’m looking forward to taking on new challenges that push my skills even further.</p>
+                    <p>Here are some technologies I have been working with recently:</p>
+                    <ul id="technologies">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>GitHub</li>
+                        <li>C++</li>
+                        <li>PostgreSQL</li>
+                        <li>Scala</li>
+                    </ul>
+                </div>
+                <img src="./public/IMG_0135.JPG" alt="Profile picture of Zane">
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Adtran</h3>
+            <h4>1st Term</h4>
+            <p>I worked on the LAST (Large Automated Scale Testing) team, where I contributed to building automated tests using Robot Framework and Python to validate functionality in our web GUI. My work also involved configuring a Shenick server, which required learning how to construct and work with XML files to support testing infrastructure and data flow.</p>
+            <h4>2nd Term</h4>
+            <p>In my upcoming term at Adtran, I’ll be joining Team Nebulous, where I’ll focus on backend development for the same web GUI. My work will involve using PostgreSQL for database management and Scala for implementing and maintaining data-related functionality. I’m excited to build on my previous experience while diving deeper into scalable, production-level systems.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article class="project">
+                <h3>Magic The Gathering GUI</h3>
+                <p>This is a GUI in Python that allows users to search for their favorite card by name, mana cost, color, etc. It uses the Scryfall API to fetch card data.</p>
+                <p><span class="technologies-used">Technologies used:</span> Python, PyQt6, Scryfall API, Git</p>
+                <a href="https://github.com/ezc9-tech/mtg-card-browser" target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
+                <img src="./public/Screenshot 2025-05-13 154811.png" alt="Screenshot of Magic The Gathering GUI">
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>I am currently looking for new opportunities. My inbox is always open — whether you have a question or just want to say hi, I'll get back to you as soon as I can!</p>
+            <div id="contact_info">
+                <a href="mailto:ezc9@outlook.com">Email</a>
+                <a href="https://www.linkedin.com/in/elijah-chapman-aa253124b/" target="_blank">LinkedIn</a>
+                <a href="https://discordapp.com/users/zchapman66_86751" target="_blank">Discord</a>
+                <a href="https://github.com/ezc9-tech" target="_blank">GitHub</a>
+            </div>
+
+            <form id="contact-form">
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="./public/index.js"></script>
+</body>
+</html>
